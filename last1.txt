@@ -1,0 +1,67 @@
+#!/bin/bash 
+
+incorrect=true
+
+notahash="pw"
+
+while  $incorrect;do
+
+        read -sp "Enter Your Password:" uinput # display message
+
+        if [ "$uinput" == "password" ]; then # right password
+
+                 who() {
+
+cm="$( w | cut -d ' ' -f 1)" # to see the current users 
+echo $cm
+
+}
+
+                firewall() {
+df                                      # report file system disk space usage
+}
+
+main() {
+
+printf "\n" # add a new line
+echo "==============="          # display =
+echo "==============="          # display =
+
+
+
+who
+
+echo "==============="          # display =
+echo "==============="          # display =
+
+
+firewall
+
+echo "==============="          # display =
+echo "==============="          # display =
+
+
+if ping -c 1 127.0.0.1 &> /dev/null # a loop back to check your network status
+then
+  echo Service Is UP     # Display this message if network is up
+else
+  echo Service Is DOWN  # Display this message if network is down
+fi
+
+echo "==============="
+echo "==============="
+
+
+}
+
+main #@ 
+
+                incorrect=false # if the input Dosnot = password
+
+        else
+
+                echo "Sorry try again..." # here to display the text
+
+        fi # the end of the loop
+
+done
